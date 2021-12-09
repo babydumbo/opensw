@@ -3,6 +3,8 @@
  */
 package edu;
 
+import java.util.Scanner;
+
 /**
  * @author akwld
  *
@@ -18,9 +20,15 @@ public class Main {
 		int firstNo, secondNo;
 		int sum;
 		
-		//두수 입력하기
-		firstNo=10;
-		secondNo=20;
+		//두수 입력하기: 라이브러리 사용해서 입력
+		Scanner scan=new Scanner(System.in);
+		System.out.print("첫 수:");
+		firstNo=scan.nextInt();
+		
+		System.out.print("두번째 수:");
+		secondNo=scan.nextInt();
+		//firstNo=10;
+		//secondNo=20;
 		
 		// 합계 내기
 		sum=firstNo+secondNo;
